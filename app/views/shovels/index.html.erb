@@ -1,0 +1,14 @@
+List of Shovels
+<%= link_to "New Shovel", new_shovel_path %>
+
+<% @shovels.each do |shovel| %>
+
+<%= link_to "#{shovel.name} (Quantity: #{shovel.quantity})", shovel_path(shovel) %>
+
+<%= link_to "Edit", edit_shovel_path(shovel) %>
+<%= link_to "Sign out", sign_out_path %>
+
+
+
+
+<% end %>

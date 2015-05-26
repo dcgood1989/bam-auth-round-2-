@@ -1,0 +1,6 @@
+<%= "Shovel Name: #{@shovel.name}" %>
+<%= "Shovel Quantity: #{@shovel.quantity}" %>
+
+<%= link_to "Index", shovels_path %>
+<%= link_to "Edit", edit_shovel_path(@shovel) %>
+<%= link_to "Destroy", shovel_path(@shovel), method: :delete, data: {confirm: "are you sure"} %>
